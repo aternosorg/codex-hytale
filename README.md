@@ -1,4 +1,4 @@
-# Codex for Minecraft
+# Codex for Hytale
 
 ### About
 
