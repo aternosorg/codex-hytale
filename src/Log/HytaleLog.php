@@ -72,4 +72,12 @@ class HytaleLog extends AnalysableLog implements DetectableLogInterface
             'title' => "Hytale Server Log"
         ], parent::jsonSerialize());
     }
+
+    /**
+     * @return string
+     */
+    public function getTitle(): string
+    {
+        return "Hytale Server Log";
+    }
 }
