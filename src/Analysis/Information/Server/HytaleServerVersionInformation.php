@@ -13,7 +13,7 @@ class HytaleServerVersionInformation extends HytaleVersionInformation
     public static function getPatterns(): array
     {
         return [
-            HytaleServerLog::getPattern('\[HytaleServer\] Booting up HytaleServer - Version: ([\w\.-]+), Revision: \w+')
+            HytaleServerLog::getPattern('\[HytaleServer\] Booting up HytaleServer - Version: ([\w\.\-]+), Revision: \w+')
         ];
     }
 }

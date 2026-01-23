@@ -14,7 +14,7 @@ class HytaleClientVersionInformation extends HytaleVersionInformation
     public static function getPatterns(): array
     {
         return [
-            HytaleClientLog::getPattern('HytaleClient\.Application\.Program\|HytaleClient (v[\w.\-]+)')
+            HytaleClientLog::getPattern('HytaleClient\.Application\.Program\|HytaleClient (v[\w\.\-]+)')
         ];
     }
 }
