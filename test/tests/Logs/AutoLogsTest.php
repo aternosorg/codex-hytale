@@ -18,9 +18,19 @@ class AutoLogsTest extends \PHPUnit\Framework\TestCase
      * @return void
      * @throws Exception
      */
+    public function test_hytale_2026_01_23(): void
+    {
+        $log = new TestLog('Client/hytale-2026-01-23.log');
+        $this->assertStringEqualsFile($log->getExpectedPath(), $log->getOutput(), $log->getLogPath());
+    }
+
+    /**
+     * @return void
+     * @throws Exception
+     */
     public function test_hytale_2026_01_17(): void
     {
-        $log = new TestLog('Hytale/hytale-2026-01-17.log');
+        $log = new TestLog('Server/hytale-2026-01-17.log');
         $this->assertStringEqualsFile($log->getExpectedPath(), $log->getOutput(), $log->getLogPath());
     }
 }
